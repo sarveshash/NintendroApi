@@ -44,4 +44,4 @@ def get_pokemon_by_type(poke_type):
         return jsonify({"error": "No Pokémon found with this type"}), 404
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
